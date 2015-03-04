@@ -6,7 +6,7 @@
 ;; the terms of this license.
 ;; You must not remove this notice, or any other, from this software.
 
-(ns cljs-uuid-utils
+(ns cljs-uuid-utils.core
   "ClojureScript micro-library with an implementation of a type 4, random UUID generator compatible with RFC-4122 and cljs.core/UUID (make-random-uuid), a getter function to obtain the uuid string representation from a UUID-instance (uuid-string), a uuid-string conformance validating predicate (valid-uuid?), and a UUID factory from uuid-string with conformance validation (make-uuid-from)."
   (:require [clojure.string :as string]))
 
