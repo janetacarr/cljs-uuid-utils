@@ -18,7 +18,7 @@ An implementation of a squuid (semi-sequential uuid) generator is also included 
 Add the following to your `project.clj` dependencies:
 
 ```clojure
-[com/lucasbradstreet/cljs-uuid-utils "1.0.1"]
+[com.lucasbradstreet/cljs-uuid-utils "1.0.1"]
 ```
 
 ## Usage
