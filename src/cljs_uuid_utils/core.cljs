@@ -54,7 +54,7 @@
                         (repeatedly 4 f) "-4"
                         (repeatedly 3 f) "-"
                         (g) (repeatedly 3 f) "-"
-                        (repeatedly 12 f))))))
+                        (repeatedly 12 f))) nil)))
 
 
 (defn make-random-uuid
@@ -75,7 +75,7 @@
                         (repeatedly 4 f) "-4"
                         (repeatedly 3 f) "-"
                         (g) (repeatedly 3 f) "-"
-                        (repeatedly 12 f))))))
+                        (repeatedly 12 f))) nil)))
 
 
 (def ^:private uuid-regex 
@@ -127,4 +127,4 @@
   (when-let [uuid (valid-uuid? maybe-uuid)]
     (if (= (type maybe-uuid) cljs.core/UUID)
       maybe-uuid
-      (UUID. uuid))))
+      (UUID. uuid nil))))
